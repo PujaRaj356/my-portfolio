@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja R — Resume / CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #233928;
+            --orange: #f4a328;
+            --terracotta: #d86438;
+            --dark: #1b261d;
+            --light-bg: #f7f4ea;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e5e5e5;
+            color: #1a1a1a;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .resume-page {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            position: relative;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+        .candidate-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .candidate-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--terracotta);
+            margin-top: 0.2rem;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .contact-info a { color: var(--primary); font-weight: 600; text-decoration: none; }
+        .section-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            border-bottom: 1.5px solid #dcdcdc;
+            padding-bottom: 0.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        .summary-text { font-size: 0.95rem; color: #333; }
+        .edu-item, .exp-item, .project-item { margin-bottom: 1.2rem; }
+        .item-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.05rem; }
+        .item-sub { color: #555; font-size: 0.92rem; margin-bottom: 0.4rem; font-weight: 600; }
+        .item-badge { background: #f4a328; color: #1b261d; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 800; font-size: 0.8rem; }
+        ul.bullet-list { margin-left: 1.2rem; font-size: 0.92rem; color: #333; }
+        ul.bullet-list li { margin-bottom: 0.3rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; font-size: 0.92rem; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--terracotta);
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-size: 0.95rem;
+        }
+        .print-btn:hover { background: var(--primary); }
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-page { box-shadow: none; padding: 0; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+    <div class="resume-page">
+        <div class="header-bar">
+            <div>
+                <h1 class="candidate-name">PUJA R</h1>
+                <div class="candidate-title">M.Sc. Software Systems Student | AI & Full-Stack Developer</div>
+            </div>
+            <div class="contact-info">
+                <div>✉️ <a href="mailto:pujarangaraj356@gmail.com">pujarangaraj356@gmail.com</a></div>
+                <div>📞 +91 9894106562</div>
+                <div>🌐 <a href="https://linkedin.com/in/puja-raj-663600339/" target="_blank">linkedin.com/in/puja-raj-663600339</a></div>
+                <div>💻 <a href="https://github.com/PujaRaj356" target="_blank">github.com/PujaRaj356</a></div>
+                <div>🧩 <a href="https://leetcode.com/u/PujaRaj0305/" target="_blank">leetcode.com/u/PujaRaj0305</a></div>
+            </div>
+        </div>
+
+        <div class="section-title">Summary</div>
+        <p class="summary-text">
+            Third-year M.Sc. Software Systems student at Coimbatore Institute of Technology with experience developing AI-powered and full-stack web applications through academic projects, hackathons, and internships. Focused on software development, AI/ML, and building practical technology solutions.
+        </p>
+
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+            <div class="item-header">
+                <span>M.Sc Software Systems (5 Year Integrated)</span>
+                <span>2024 – 2029</span>
+            </div>
+            <div class="item-sub">Coimbatore Institute of Technology</div>
+            <span class="item-badge">CGPA: 9.1 [Till 4th Semester]</span>
+        </div>
+        <div class="edu-item">
+            <div class="item-header">
+                <span>Class 12 (HSC)</span>
+                <span>2024</span>
+            </div>
+            <div class="item-sub">Geethanjalee Matric Hr Sec School</div>
+            <p class="summary-text">Completed HSC in 2024 with an aggregate of <strong>94%</strong>.</p>
+        </div>
+
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div><strong>Programming:</strong> Python, C, C++, Java, JavaScript, TypeScript</div>
+            <div><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Angular, Next.js</div>
+            <div><strong>Backend & DB:</strong> Node.js, REST APIs, FastAPI, MySQL, SQLite</div>
+            <div><strong>Tools & Platforms:</strong> Git, GitHub, Vercel, VS Code</div>
+        </div>
+
+        <div class="section-title">Projects</div>
+        <div class="project-item">
+            <div class="item-header">
+                <span>AGRIHIVE — AI Powered Agriculture Platform 🥇</span>
+            </div>
+            <div class="item-sub">Python · FastAPI · Scikit-learn · Pandas · NumPy · SQLAlchemy · SQLite · SHAP</div>
+            <ul class="bullet-list">
+                <li>Built an AI-powered smart agriculture platform for crop monitoring, disease prediction, and personalized farming recommendations.</li>
+                <li>Implemented Random Forest, Federated Learning, PSO, and SHAP for predictive analysis and intelligent decision-making.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <div class="item-header">
+                <span>Blood Donation Web App</span>
+            </div>
+            <div class="item-sub">React · JavaScript · HTML · CSS · MySQL · REST API</div>
+            <ul class="bullet-list">
+                <li>Built a real-time blood donor tracking platform with instant alerts for urgent blood requirements.</li>
+                <li>Implemented donor search, blood-group matching, and real-time notifications to connect donors with patients quickly.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <div class="item-header">
+                <span>Federated Learning-Based Network Intrusion Detection System (NIDS)</span>
+            </div>
+            <div class="item-sub">Python · Machine Learning · Scikit-learn · Federated Learning · Network Security</div>
+            <ul class="bullet-list">
+                <li>Developed a privacy-aware ML-based NIDS to classify network traffic as normal or malicious using network-flow features.</li>
+                <li>Implemented Federated Learning for collaborative model training without sharing raw network data.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Internship</div>
+        <div class="exp-item">
+            <div class="item-header">
+                <span>MVP To AI-Powered Apps: For Modern Web Builders</span>
+                <span>2024</span>
+            </div>
+            <div class="item-sub">Boredom LLP Technologies</div>
+            <ul class="bullet-list">
+                <li>Completed a 2-week internship focused on MVP development and AI-powered web applications.</li>
+                <li>Gained hands-on experience in modern web development, AI integration, API development, cloud services, and application analytics through a practical project-based approach.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Certifications</div>
+        <ul class="bullet-list">
+            <li>IITM BS Data Science Foundation Course</li>
+            <li>UI/UX Design Workshop (NoviTech R&D)</li>
+        </ul>
+
+        <div class="section-title">Achievements & Leadership</div>
+        <ul class="bullet-list">
+            <li>🥇 First Place in NIT hackathon - AgriHive</li>
+            <li>🎨 Best Theme Award – Racathon (Rotaract Club)</li>
+            <li>🚀 U & Me Hackathon — Reached the final round, selected among 240 participating teams</li>
+            <li>🎖️ Assistant School Pupil Leader - Class 11 and 12</li>
+        </ul>
+    </div>
+
+</body>
+</html>
